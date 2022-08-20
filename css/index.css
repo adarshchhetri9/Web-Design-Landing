@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0.1px solid pink;
+}
+
+
+
+body{
+    color:#43428a;
+    font-family: Roboto;
+    background-image: url(../images/backcover.svg);
+    background-size: contain;
+    /* height: 130vh; */
+    background-position: right;
+    background-repeat: no-repeat;
+    
+
+}
+
+.op{
+    display: none;
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+}
+
+nav > img{
+    height: 30px;
+    /* margin: 7vh; */
+} 
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap:45px;
+    flex-wrap: wrap;
+}
+
+.signin-btn{
+    /* margin: 55px; */
+    font-weight: 500;
+    font-size: 12px;
+    padding:  1px 10px;
+}
+
+.intro-section{
+    display: flex;
+
+}
+
+.left-section{
+    margin-top: 50px;
+
+}
+
+.right-section{
+    display: flex;
+}
+
+.left-section > h1{
+    margin: 7vh;
+    font-size: 60px
+}
+
+.left-section > h4{
+    margin: 7vh;
+}
+
+.learn-more-btn{
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+button{
+    background-image: linear-gradient(90deg, #975CF2 , #FF8ADC  );
+    color: aliceblue;
+    border-radius: 20px;
+    border: none
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-items{
+        display: none;
+    }
+
+    body{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        height: 8vh;
+        align-items: center;
+    }
+
+    body{
+        background-position: top;
+    }
+
+    .intro-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .vector-img , .vector-dot{
+        display: none;
+    }
+
+    .main{
+        height: 300px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .left-section{
+        margin-top: 0px;
+    }
+
+    .op{
+        display: block;
+    }
+  }
